@@ -32,7 +32,7 @@ def deposit() -> int:
     """
     while True: # while loop to continually ask the user until a valid amount has been input
 
-        amount = input("How much would you like to deposit?\n$")
+        amount = input("How much money would you like to deposit?\n$")
 
         if amount.isdigit(): # Check if the input is a valid number
             amount = int(amount) # convert string to int
@@ -78,7 +78,7 @@ def get_bet() -> int:
          int: Validated bet amount per line.
     """
     while True:
-        bet_amount = input("\nHow much would you like to bet on each slot line? \n$")
+        bet_amount = input("\nHow much money would you like to bet on each slot line? \n$")
 
         if bet_amount.isdigit():
             bet_amount = int(bet_amount)
