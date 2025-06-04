@@ -3,3 +3,6 @@ venv/
 
 # Ignore .idea directory
 .idea/
+
+# Ignore cache files
+services/__pycache__/*
