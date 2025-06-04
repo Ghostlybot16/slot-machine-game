@@ -6,3 +6,5 @@ venv/
 
 # Ignore cache files
 services/__pycache__/*
+__pycache__/*
+tests/__pycache__/*
