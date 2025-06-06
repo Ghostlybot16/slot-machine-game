@@ -1,0 +1,29 @@
+<!-- templates/home-page.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Slot Machine - Deposit</title>
+</head>
+
+<body>
+    <h1>Welcome to the Slot Machine Game</h1>
+
+    <form method="POST">
+        <label>Enter deposit amount: $</label>
+        <input type="number" name="deposit_amount" min="1" required>
+        <button type="submit">Deposit</button>
+    </form>
+
+    {% if message %}
+        <p style="color:green">{{ message }}</p>
+        <form action="{{ url_for('play') }}">
+            <button type="submit">Start Playing</button>
+        </form>
+    {% endif %}
+
+    {% if error %}
+        <p style="color:red">{{ error }}</p>
+    {% endif %}
+</body>
+</html>
